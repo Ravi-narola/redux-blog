@@ -1,0 +1,84 @@
+/* Register Form Style */
+.bg_image_form{
+  width: 100%;
+  height: 100% !important;
+  background-image: url('image/background.avif');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.bg_image_form{
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  width: 25% !important;
+}
+/* Register Form Style */
+
+
+/* Dashboard Style */
+.dashboard_bg{
+  padding: 10px 100px 10px 110px;   
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+/* Dashboard Style */
+
+/* Card */
+.card_size{
+  width: 350px;
+  height: auto;
+}
+/* Card */
+
+/* Media Query */
+
+@media (min-width:0) and (max-width:426px) {
+
+  .bg_image_form{
+      width: 100% !important;
+  }
+  .dashboard_bg{
+    padding: 5px 15px;
+  }
+  .card_size{
+    width: 290px;
+  }
+}
+@media (min-width:426px) and (max-width:768px) {
+
+  .bg_image_form{
+      width: 60% !important;
+  }
+  .dashboard_bg{
+    padding: 10px 40px;
+  }
+  .card_size{
+    width: 310px;
+  }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+
+  .bg_image_form{
+      width: 50% !important;
+  }
+  .dashboard_bg{
+    padding: 10px 120px;
+  }
+  .card_size{
+    width: 320px;
+  }
+}
+
+
+@media (min-width:1025px) and (max-width:1400px) {
+
+  .bg_image_form{
+      width: 30% !important;
+  }
+  .dashboard_bg{ 
+    padding: 15px 150px;
+  }
+  .card_size{
+    width: 330px;
+  }
+}

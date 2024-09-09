@@ -5,7 +5,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 
 export const showUser = createAsyncThunk(
     'showUser',async(args,{rejectWithValue})=>{
-        let res = await fetch(`https://character-data.onrender.com/users`)
+        let res = await fetch(`https://character-json-server.vercel.app/users`)
         try {
             let resBody = await  res.json()
             // console.log(resBody);
@@ -20,7 +20,7 @@ export const showUser = createAsyncThunk(
 
 export const deleteUser = createAsyncThunk('deleteuser',
 async(data,{rejectWithValue})=>{
-    let res = await fetch(`https://character-data.onrender.com/users/${data.id}`,{method:'DELETE'})
+    let res = await fetch(`https://character-json-server.vercel.app/users/${data.id}`,{method:'DELETE'})
     try {
         let resBody = await  res.json()
         // console.log(resBody);
@@ -34,7 +34,7 @@ async(data,{rejectWithValue})=>{
 
 export const postUser = createAsyncThunk('postuser',
 async(data,{rejectWithValue})=>{
-    let res = await fetch(`https://character-data.onrender.com/users`,{method:'POST',body:JSON.stringify(data),headers:{"Content-Type":"application/json"}})
+    let res = await fetch(`https://character-json-server.vercel.app/users`,{method:'POST',body:JSON.stringify(data),headers:{"Content-Type":"application/json"}})
     try {
         let resBody = await  res.json()
         // console.log(resBody);
@@ -48,7 +48,7 @@ async(data,{rejectWithValue})=>{
 
 export const updateUser = createAsyncThunk('updateuser',
 async(data,{rejectWithValue})=>{
-    let res = await fetch(`https://character-data.onrender.com/users/${data.id}`,{method:'PUT',body:JSON.stringify(data),headers:{"Content-Type":"application/json"}})
+    let res = await fetch(`https://character-json-server.vercel.app/users/${data.id}`,{method:'PUT',body:JSON.stringify(data),headers:{"Content-Type":"application/json"}})
     try {
         let resBody = await  res.json()
         // console.log(resBody);
